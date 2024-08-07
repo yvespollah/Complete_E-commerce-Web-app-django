@@ -1,14 +1,10 @@
-<!DOCTYPE html>
+{% extends 'base.html' %}
 {% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="{ {% static 'css/main.css' %} }">
-    <title>piko market</title>
-</head>
-<body>
-    <h2> Shop </h2>
-    <img src="{% static 'images/panier.png' %} " alt="">
-</body>
-</html>
+
+{% block content %}
+
+<h2> Shop </h2>
+<img src="{% static 'images/panier.png' %} " alt="">
+
+{% endblock content %}
+    
